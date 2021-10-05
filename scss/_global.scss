@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "DINPro", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #fff;
+  background-color: $purple;
+  background-image: url("../images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  letter-spacing: 0.5px;
+  @media (max-width: 520px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @media (max-width: 420px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 16px 58px;
+  box-shadow: inset 0 0 7px 0px rgba(#fff, 0.57),
+    0 0 30px 0px rgba(#3d0d6c, 0.5);
+
+  border-radius: 30px;
+  background-image: linear-gradient(
+    rgb(132, 46, 215) 0%,
+    rgb(78, 203, 76) 100%
+  );
+  transition: ease 0.2s;
+  &:hover{
+	box-shadow: inset 0 0 10px 0px rgba(#fff, 0.5),
+    0 0 30px 2px rgba(#000, 0.5);
+  }
+  @media (max-width: 520px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.section-title {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  @media (max-width: 520px) {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  @media (max-width: 440px) {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+
+.section-page {
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    max-width: 760px;
+    right: 0;
+    left: 0;
+    height: 4px;
+    background-image: url("../images/section-line.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  @media (max-width: 520px) {
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    &::after {
+      height: 2px;
+    }
+  }
+}
