@@ -38,4 +38,6 @@ $(function () {
       ],
     });
 
+    AOS.init();
+
 })
